@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelton Tree Care - Everett, WA Tree Service</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Need Tree Service?<br>Our Crew Can Be On-Site<br>This Week</h1>
+                    <p class="subtitle">Local Everett, WA Tree Service.</p>
+                    <p class="description">We Can Help With: Tree Trimming/Removal, Stump Grinding, etc</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="openModal()">Get FREE Estimate</button>
+                        <a href="tel:4255294009" class="btn btn-secondary">Call (425) 529-4009</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="toptier.png" alt="Pelton Tree Care - Tree Service Professional" class="main-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>See What Our Clients Have To Say...</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Micah and his crew did a fantastic job for me, removing trees and pruning. They were quick and absolutely cleaned up everything before they left. Micah was patient and took the time to get to know my needs, but also educated me when my ideas were wrong. I used using local and am really thankful. I found Pelton Tree Care on Facebook (good reviews). Get a free estimate and feel Safer this winter."</p>
+                    <p class="testimonial-author"><strong>Julia Baldwin</strong><br>Google Review</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2>Our Tree Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <img src="trimming.png" alt="Tree Trimming" class="service-icon">
+                    <h3>Tree Trimming/Pruning</h3>
+                </div>
+                <div class="service-item">
+                    <img src="deforestation.png" alt="Tree Removal" class="service-icon">
+                    <h3>Tree Removal</h3>
+                </div>
+                <div class="service-item">
+                    <img src="stump.png" alt="Stump Grinding" class="service-icon">
+                    <h3>Stump Grinding</h3>
+                </div>
+                <div class="service-item">
+                    <img src="tree.png" alt="Tree Health Management" class="service-icon">
+                    <h3>Tree Health Management</h3>
+                </div>
+                <div class="service-item">
+                    <img src="emergency.png" alt="24/7 Emergency Relief" class="service-icon">
+                    <h3>24/7 Emergency Relief</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call Banner -->
+    <section class="call-banner">
+        <div class="container">
+            <h2>For Immediate Service, Call (425) 529-4009</h2>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Pelton Tree Care</h2>
+                    <p>Pelton Tree Care, LLC is a family owned and operated business with certified arborists, and 25+year experience. Micah and his crews provide quality tree care including pruning, grinding, and landscaping in Everett, WA and surrounding areas.</p>
+                    <p>We are a member of ISA (International Society of Arboriculture) and TCIA (Tree Care Industries of America).</p>
+                    <p>Our team is diligent about protecting your property while felling trees, removing stumps, and cleaning up debris. Our crews work carefully to make sure tree trunks, branches, and limbs do not cause damage to your property.</p>
+                </div>
+                <div class="about-logo">
+                    <img src="logo.png" alt="Pelton Tree Care" class="company-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="footer-cta">
+        <div class="container">
+            <h2>Our Crews are On Standby, Call Now</h2>
+            <p>Let's give your trees the care they truly deserve!</p>
+            <a href="tel:4255294009" class="btn btn-secondary">Call (425) 529-4009</a>
+        </div>
+    </section>
+
+    <!-- Modal Popup -->
+    <div id="estimateModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Book a FREE Estimate:</h2>
+            <form id="estimateForm">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <select id="select" name="select" required>
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="1 Tree Trimming">1 Tree Trimming</option>
+                    <option value="2 Tree Removal">2 Tree Removal</option>
+                    <option value="3 Stump Grinding">3 Stump Grinding</option>
+                    <option value="4 Other">4 Other</option>
+                </select>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
