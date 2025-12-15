@@ -67,13 +67,16 @@ document.getElementById('estimateForm').addEventListener('submit', async functio
     submitButton.textContent = 'Sending...';
 
     try {
-        // Send data to webhook
+        // Send data to webhook using FormData (better compatibility with Make)
+        const formDataToSend = new FormData();
+        formDataToSend.append('name', formData.name);
+        formDataToSend.append('phone', formData.phone);
+        formDataToSend.append('email', formData.email);
+        formDataToSend.append('select', formData.select);
+
         const response = await fetch('https://hook.us2.make.com/eyls3wu7e6pykw7le6fu65x49u6x4svd', {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData)
+            body: formDataToSend
         });
 
         if (response.ok) {
