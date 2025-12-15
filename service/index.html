@@ -20,11 +20,20 @@
       gtag('config', 'AW-11225297897');
     </script>
 
-    <!-- Phone call conversion tracking -->
+    <!-- Event snippet for Landing Page Conversion conversion page -->
     <script>
-      gtag('config', 'AW-11225297897/0mHYCOiA64cZEOnn0egp', {
-        'phone_conversion_number': '(425) 529-4009'
-      });
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-11225297897/GjFXCKWNto0ZEOnn0egp',
+            'event_callback': callback
+        });
+        return false;
+      }
     </script>
 </head>
 <body>

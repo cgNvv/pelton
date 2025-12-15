@@ -78,8 +78,8 @@ document.getElementById('estimateForm').addEventListener('submit', async functio
 
         if (response.ok) {
             // Track conversion
-            if (typeof gtag !== 'undefined') {
-                gtag('event', 'conversion', {'send_to': 'AW-11225297897/GjFXCKWNto0ZEOnn0egp'});
+            if (typeof gtag_report_conversion !== 'undefined') {
+                gtag_report_conversion();
             }
 
             // Success message
